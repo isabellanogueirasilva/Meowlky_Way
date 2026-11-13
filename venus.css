@@ -1,0 +1,754 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #090B1B;
+    color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+:root {
+    --fundo: #090B1B;
+    --fundo-card: #15182B;
+    --laranja: #FF9D42;
+    --amarelo: #FFD166;
+    --vermelho: #FF554F;
+    --texto: #FFFFFF;
+    --texto-secundario: #B9BDD0;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    width: 100%;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(9, 11, 27, 0.95);
+    border-bottom: 1px solid rgba(255, 157, 66, 0.2);
+}
+
+.logo {
+    color: var(--laranja);
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+
+
+/* ELEMENTOS GERAIS */
+
+.etiqueta {
+    color: var(--laranja);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.botao {
+    display: inline-block;
+    padding: 14px 25px;
+    background: linear-gradient(90deg, #FF743B, #FFB347);
+    color: #17101A;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+
+
+/* HERO */
+
+.venus-hero {
+    min-height: 540px;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background:
+        radial-gradient(circle at 80% 50%, rgba(255, 102, 30, 0.18), transparent 35%),
+        linear-gradient(120deg, #090B1B, #21101A);
+}
+
+.hero-conteudo {
+    max-width: 570px;
+}
+
+.hero-conteudo h1 {
+    margin: 18px 0 5px;
+    color: var(--laranja);
+    font-size: clamp(55px, 8vw, 95px);
+    text-shadow: 0 0 30px rgba(255, 115, 40, 0.4);
+}
+
+.hero-conteudo h2 {
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: var(--amarelo);
+}
+
+.hero-conteudo p {
+    margin-bottom: 30px;
+    color: var(--texto-secundario);
+    max-width: 520px;
+    font-size: 17px;
+}
+
+
+/* PLANETA */
+
+.venus-ilustracao {
+    width: 330px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.venus-planeta {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background:
+        repeating-linear-gradient(
+            160deg,
+            transparent 0px,
+            rgba(255, 230, 150, 0.35) 12px,
+            transparent 27px,
+            rgba(190, 60, 20, 0.4) 40px
+        ),
+        linear-gradient(135deg, #FFE09A, #F78B38, #A72C22);
+    box-shadow:
+        0 0 40px rgba(255, 125, 40, 0.45),
+        0 0 100px rgba(255, 75, 30, 0.2);
+    animation: flutuar 5s ease-in-out infinite;
+}
+
+.planet-visual {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.planet-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    /* Faz a imagem desaparecer suavemente nas bordas */
+    -webkit-mask-image: radial-gradient(
+        circle,
+        black 45%,
+        rgba(0, 0, 0, 0.8) 60%,
+        transparent 75%
+    );
+
+    mask-image: radial-gradient(
+        circle,
+        black 45%,
+        rgba(0, 0, 0, 0.8) 60%,
+        transparent 75%
+    );
+
+    /* Efeito de iluminação */
+    filter: drop-shadow(0 0 35px rgba(255, 120, 50, 0.35));
+}
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+}
+
+
+/* INFORMAÇÕES */
+
+.informacoes {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.informacoes h2 {
+    margin: 15px 0;
+    font-size: 30px;
+}
+
+
+.descricao {
+    color: var(--texto-secundario);
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.informacoes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.info-card {
+    padding: 30px 24px;
+    background: var(--fundo-card);
+    border: 1px solid rgba(255, 157, 66, 0.15);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+
+
+.info-icone {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    color: var(--laranja);
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    color: var(--texto-secundario);
+    font-size: 14px;
+}
+
+
+/* MISSÃO */
+
+.missao {
+    padding: 90px 10%;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(255, 110, 40, 0.10), transparent 40%),
+        #0D1021;
+}
+
+.missao-cabecalho {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.missao-cabecalho h2 {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.missao-cabecalho p {
+    color: var(--texto-secundario);
+    font-size: 18px;
+}
+
+
+/* SITUAÇÃO */
+
+.situacao {
+    max-width: 900px;
+    margin: 0 auto 35px;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: #191B2D;
+    border: 1px solid rgba(255, 157, 66, 0.3);
+    border-radius: 15px;
+}
+
+.zeus {
+    min-width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 157, 66, 0.12);
+    border-radius: 50%;
+    font-size: 48px;
+}
+
+.situacao-texto h3 {
+    color: var(--laranja);
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.situacao-texto p {
+    color: var(--texto-secundario);
+    font-size: 14px;
+}
+
+
+/* PISTAS */
+
+.pistas {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 28px;
+    background: rgba(255, 157, 66, 0.06);
+    border: 1px solid rgba(255, 157, 66, 0.2);
+    border-radius: 15px;
+}
+
+.pistas h3 {
+    color: var(--amarelo);
+    font-size: 22px;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.pistas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.pista {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.pista span {
+    min-width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 157, 66, 0.18);
+    color: var(--laranja);
+    border-radius: 7px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+}
+
+.pista p {
+    color: var(--texto-secundario);
+    font-size: 16px;
+}
+
+
+/* PERGUNTA */
+
+.pergunta {
+    text-align: center;
+    max-width: 750px;
+    margin: 100px auto 35px;
+}
+
+.numero-pergunta {
+    color: var(--laranja);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.pergunta h3 {
+    font-size: 21px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.pergunta p {
+    color: var(--texto-secundario);
+    font-size: 14px;
+}
+
+
+/* ROTAS */
+
+.rotas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    align-items: stretch;
+}
+
+.rota-card {
+    padding: 25px;
+    background: #191B2D;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.rota-card:hover {
+    transform: translateY(-8px);
+}
+
+.rota-01 {
+    border-top: 4px solid #FF554F;
+}
+
+.rota-02 {
+    border-top: 4px solid #FFB347;
+}
+
+.rota-03 {
+    border-top: 4px solid #E5A34C;
+}
+
+.rota-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.rota-numero {
+    color: var(--texto-secundario);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.rota-icone {
+    font-size: 35px;
+}
+
+.rota-card h3 {
+    font-size: 22px;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.rota-01 h3 {
+    color: #FF7169;
+}
+
+.rota-02 h3 {
+    color: #FFB347;
+}
+
+.rota-03 h3 {
+    color: #E5A34C;
+}
+
+.rota-card p {
+    color: var(--texto-secundario);
+    font-size: 17px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.rota-detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding: 15px 0;
+    margin-bottom: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.rota-detalhes span {
+    font-size: 15px;
+    color: var(--texto-secundario);
+}
+
+.botao-rota {
+    display: block;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    color: #17101A;
+    background: linear-gradient(90deg, #FF743B, #FFB347);
+    border-radius: 7px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 11px;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+.botao-rota:hover {
+    filter: brightness(1.15);
+    box-shadow: 0 0 20px rgba(255, 157, 66, 0.3);
+}
+
+
+/* RESULTADOS */
+
+.resultado {
+    display: none;
+    max-width: 750px;
+    margin: 50px auto 0;
+    padding: 40px;
+    text-align: center;
+    background: #191B2D;
+    border-radius: 15px;
+    animation: aparecer 0.5s ease;
+}
+
+.resultado:target {
+    display: block;
+}
+
+.resultado-icone {
+    display: block;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.resultado h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.resultado p {
+    color: var(--texto-secundario);
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.resultado strong {
+    display: block;
+    margin: 20px 0;
+    color: var(--amarelo);
+}
+
+.resultado-errado {
+    border: 1px solid rgba(255, 85, 79, 0.4);
+}
+
+.resultado-errado h3 {
+    color: #FF7169;
+}
+
+.resultado-certo {
+    border: 1px solid rgba(255, 179, 71, 0.5);
+}
+
+.resultado-certo h3 {
+    color: var(--amarelo);
+}
+
+.pista-encontrada {
+    margin: 25px 0;
+    padding: 20px;
+    background: rgba(255, 157, 66, 0.09);
+    border-radius: 10px;
+}
+
+.pista-encontrada span {
+    display: block;
+    color: var(--laranja);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.pista-encontrada p {
+    margin: 0;
+}
+
+
+/* PRÓXIMA MISSÃO */
+
+.proxima-missao {
+    display: none;
+    max-width: 750px;
+    margin: 50px auto 0;
+    padding: 45px 30px;
+    text-align: center;
+    background: linear-gradient(135deg, #27151D, #17172A);
+    border: 1px solid rgba(255, 157, 66, 0.3);
+    border-radius: 15px;
+}
+
+.proxima-missao:target {
+    display: block;
+    animation: aparecer 0.5s ease;
+}
+
+.proxima-missao h2 {
+    color: var(--laranja);
+    font-size: 25px;
+    margin: 18px 0;
+}
+
+.proxima-missao p {
+    color: var(--texto-secundario);
+    margin-bottom: 25px;
+}
+
+
+/* ANIMAÇÃO */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* RODAPÉ */
+
+footer {
+    padding: 35px 10%;
+    text-align: center;
+    background: #080A16;
+    border-top: 1px solid rgba(255, 157, 66, 0.15);
+}
+
+footer p {
+    color: var(--laranja);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+footer span {
+    display: block;
+    margin: 8px 0;
+    color: var(--texto-secundario);
+    font-size: 13px;
+}
+
+footer small {
+    color: #777C91;
+    font-size: 11px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .venus-hero {
+        padding: 65px 7%;
+    }
+
+    .venus-ilustracao {
+        width: 250px;
+        height: 250px;
+    }
+
+    .venus-planeta {
+        width: 210px;
+        height: 210px;
+    }
+
+    .informacoes-grid,
+    .rotas {
+        grid-template-columns: 1fr;
+    }
+
+    .pistas-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .cabecalho {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    .venus-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 7%;
+    }
+
+    .venus-ilustracao {
+        order: -1;
+    }
+
+    .hero-conteudo h1 {
+        font-size: 55px;
+    }
+
+    .informacoes,
+    .missao {
+        padding: 65px 6%;
+    }
+
+    .informacoes h2,
+    .missao-cabecalho h2 {
+        font-size: 24px;
+    }
+
+    .situacao {
+        flex-direction: column;
+        text-align: center;
+        padding: 23px;
+    }
+
+    .pistas {
+        padding: 22px;
+    }
+
+    .pergunta h3 {
+        font-size: 18px;
+    }
+
+    .resultado {
+        padding: 28px 20px;
+    }
+
+}

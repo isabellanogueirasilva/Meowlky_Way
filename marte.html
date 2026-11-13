@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MEOWLKY WAY | Missão em Marte</title>
+
+    <link rel="stylesheet" href="marte.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header class="cabecalho">
+
+        <a href="index.html" class="logo">
+            😺 MEOWLKY WAY
+        </a>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="historia.html">História</a>
+            <a href="#missao">Missão</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- APRESENTAÇÃO DE MARTE -->
+        <section class="marte-hero">
+            <div class="hero-conteudo">
+                <span class="etiqueta">MISSÃO 02</span>
+                <h1>MARTE</h1>
+                <h2>O PLANETA VERMELHO</h2>
+                <p>
+                    Zeus chegou a Marte! Depois de atravessar Vênus,
+                    ele encontrou uma antiga estação de pesquisa abandonada.
+                    Agora precisa explorar o terreno para encontrar um
+                    dispositivo de comunicação perdido.
+                </p>
+
+                <a href="#curiosidades" class="botao">
+                    EXPLORAR MARTE
+                </a>
+
+            </div>
+
+            <div class="marte-ilustracao">
+                <img src="images__1_-removebg-preview5.png" alt="Planeta Marte" class="marte-planeta">
+            </div>
+
+        </section>
+
+
+        <!-- CURIOSIDADES -->
+
+        <section class="curiosidades" id="curiosidades">
+            <h2>VOCÊ SABIA?</h2>
+            <div class="curiosidades-grid">
+                <article class="curiosidade-card">
+                    <div class="curiosidade-imagem planeta-imagem">
+                        🔴
+                    </div>
+                    <h3>Por que é vermelho?</h3>
+
+                    <p>
+                        Marte possui uma grande quantidade de óxido
+                        de ferro em seu solo, semelhante à ferrugem,
+                        que dá ao planeta sua aparência avermelhada.
+                    </p>
+
+                </article>
+
+
+                <article class="curiosidade-card">
+
+                    <div class="curiosidade-imagem vulcao-imagem">
+                        🌋
+                    </div>
+
+                    <h3>Um vulcão gigante</h3>
+
+                    <p>
+                        Marte abriga o Monte Olimpo, o maior vulcão
+                        conhecido do Sistema Solar, com aproximadamente
+                        22 km de altura.
+                    </p>
+
+                </article>
+
+
+                <article class="curiosidade-card">
+
+                    <div class="curiosidade-imagem luas-imagem">
+                        🌑
+                    </div>
+
+                    <h3>Duas pequenas luas</h3>
+
+                    <p>
+                        O planeta possui dois satélites naturais:
+                        Fobos e Deimos. Eles são menores que a nossa Lua.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- MISSÃO -->
+
+        <section class="missao" id="missao">
+
+            <div class="missao-cabecalho">
+
+                <h2>O ITEM PERDIDO</h2>
+
+                <p>
+                    Uma antiga estação de pesquisa foi abandonada
+                    em Marte. Durante a exploração, um dispositivo
+                    de comunicação desapareceu.
+                </p>
+
+            </div>
+
+
+            <!-- PISTAS -->
+
+            <div class="pistas">
+
+                <h3>PISTAS DA MISSÃO</h3>
+
+                <p>
+                    Leia as informações antes de procurar o objeto.
+                </p>
+
+                <details>
+                    <summary>🔎 Pista 01</summary>
+                    <p>
+                        O dispositivo possui uma pequena luz azul.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>🔎 Pista 02</summary>
+                    <p>
+                        Ele está próximo de uma formação rochosa.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>🔎 Pista 03</summary>
+                    <p>
+                        Observe principalmente a região inferior
+                        direita do cenário.
+                    </p>
+                </details>
+
+            </div>
+
+
+            <!-- JOGO -->
+
+            <div class="jogo" id="jogo">
+
+                <div class="jogo-titulo">
+
+
+                    <h3>ENCONTRE O DISPOSITIVO!</h3>
+
+                    <p>
+                        Explore a paisagem abaixo e clique no dispositivo
+                        de comunicação escondido.
+                    </p>
+
+                </div>
+
+
+                <!-- CENÁRIO DE MARTE -->
+
+                <div class="cenario">
+
+                    <div class="ceu">
+
+                        <div class="estrela estrela-1"></div>
+                        <div class="estrela estrela-2"></div>
+                        <div class="estrela estrela-3"></div>
+                        <div class="estrela estrela-4"></div>
+                        <div class="estrela estrela-5"></div>
+                        <div class="estrela estrela-6"></div>
+                        <div class="estrela estrela-7"></div>
+
+                        <div class="lua-marte"></div>
+
+                        <div class="montanha montanha-1"></div>
+                        <div class="montanha montanha-2"></div>
+                        <div class="montanha montanha-3"></div>
+
+                    </div>
+
+
+                    <!-- TERRENO -->
+
+                    <div class="terreno"></div>
+
+
+                    <!-- CRATERAS -->
+
+                    <div class="cratera cratera-1"></div>
+                    <div class="cratera cratera-2"></div>
+                    <div class="cratera cratera-3"></div>
+                    <div class="cratera cratera-4"></div>
+                    <div class="cratera cratera-5"></div>
+
+
+                    <!-- PEDRAS GRANDES -->
+
+                    <div class="pedra pedra-1"></div>
+                    <div class="pedra pedra-2"></div>
+                    <div class="pedra pedra-3"></div>
+                    <div class="pedra pedra-4"></div>
+                    <div class="pedra pedra-5"></div>
+                    <div class="pedra pedra-6"></div>
+                    <div class="pedra pedra-7"></div>
+                    <div class="pedra pedra-8"></div>
+                    <div class="pedra pedra-9"></div>
+                    <div class="pedra pedra-10"></div>
+                    <div class="pedra pedra-11"></div>
+                    <div class="pedra pedra-12"></div>
+
+
+                    <!-- PEDRINHAS -->
+
+                    <div class="pedrinha pedrinha-1"></div>
+                    <div class="pedrinha pedrinha-2"></div>
+                    <div class="pedrinha pedrinha-3"></div>
+                    <div class="pedrinha pedrinha-4"></div>
+                    <div class="pedrinha pedrinha-5"></div>
+                    <div class="pedrinha pedrinha-6"></div>
+                    <div class="pedrinha pedrinha-7"></div>
+                    <div class="pedrinha pedrinha-8"></div>
+                    <div class="pedrinha pedrinha-9"></div>
+                    <div class="pedrinha pedrinha-10"></div>
+                    <div class="pedrinha pedrinha-11"></div>
+                    <div class="pedrinha pedrinha-12"></div>
+
+
+                    <!-- CAIXAS -->
+
+                    <div class="caixa caixa-1"></div>
+                    <div class="caixa caixa-2"></div>
+                    <div class="caixa caixa-3"></div>
+
+
+                    <!-- BARRIS -->
+
+                    <div class="barril barril-1"></div>
+                    <div class="barril barril-2"></div>
+
+
+                    <!-- ROBÔ EXPLORADOR -->
+
+                    <div class="robo">
+
+                        <div class="robo-antena"></div>
+                        <div class="robo-cabeca"></div>
+                        <div class="robo-corpo"></div>
+                        <div class="robo-roda roda-1"></div>
+                        <div class="robo-roda roda-2"></div>
+
+                    </div>
+
+
+                    <!-- ESTAÇÃO ABANDONADA -->
+
+                    <div class="equipamento">
+
+                        <div class="equipamento-antena"></div>
+                        <div class="equipamento-painel"></div>
+                        <div class="equipamento-base"></div>
+
+                    </div>
+
+
+                    <!-- PLACAS SOLARES -->
+
+                    <div class="placa-solar solar-1">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="placa-solar solar-2">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+
+                    <!-- DESTROÇOS -->
+
+                    <div class="destroco destroco-1"></div>
+                    <div class="destroco destroco-2"></div>
+                    <div class="destroco destroco-3"></div>
+                    <div class="destroco destroco-4"></div>
+                    <div class="destroco destroco-5"></div>
+
+
+                    <!-- ANTENA CAÍDA -->
+
+                    <div class="antena-caida"></div>
+
+
+                    <!-- DISPOSITIVO ESCONDIDO -->
+
+                    <a href="#item-encontrado"
+                       class="item-escondido"
+                       aria-label="Encontrar dispositivo de comunicação"
+                       title="Dispositivo de comunicação">
+
+                        <span class="luz-item"></span>
+
+                    </a>
+
+
+                    <!-- ROCHAS DA FRENTE -->
+
+                    <div class="rocha-frente rocha-frente-1"></div>
+                    <div class="rocha-frente rocha-frente-2"></div>
+
+
+                    <!-- IDENTIFICAÇÃO DO CENÁRIO -->
+
+                    <div class="texto-cenario">
+                        SETOR DE PESQUISA 07
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESULTADO -->
+
+            <div class="resultado" id="item-encontrado">
+
+                <div class="resultado-icone">
+                    📡
+                </div>
+
+                <span class="etiqueta">ITEM ENCONTRADO</span>
+
+                <h2>MISSÃO CONCLUÍDA!</h2>
+
+                <p>
+                    Excelente trabalho! Zeus encontrou o dispositivo
+                    de comunicação escondido entre as rochas.
+                </p>
+
+                <p>
+                    Ao recuperar o equipamento, ele conseguiu acessar
+                    uma mensagem deixada por um dos colegas desaparecidos.
+                </p>
+
+                <div class="pista-encontrada">
+
+                    <span>🔎 NOVA PISTA DESBLOQUEADA</span>
+
+                    <p>
+                        A transmissão revelou novas coordenadas.
+                        Zeus está mais perto de encontrar sua equipe!
+                    </p>
+
+                </div>
+
+                <a href="jupiter.html" class="botao">
+                    PRÓXIMO PLANETA →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+
+</body>
+
+</html>
