@@ -582,24 +582,6 @@ nav a {
 
 /* RODAPÉ */
 
-footer {
-    padding: 30px 15px;
-    text-align: center;
-    background: #070916;
-    border-top: 1px solid rgba(181, 138, 232, 0.15);
-}
-
-footer p {
-    color: var(--lilas);
-    font-family: 'Orbitron', sans-serif;
-    font-size: 12px;
-    margin-bottom: 10px;
-}
-
-footer span {
-    color: var(--texto-secundario);
-    font-size: 12px;
-}
 
 /* RESPONSIVIDADE */
 
