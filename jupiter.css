@@ -189,10 +189,6 @@ nav a {
     transition: 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-6px);
-    border-color: var(--roxo-claro);
-}
 
 .icone {
     font-size: 35px;
